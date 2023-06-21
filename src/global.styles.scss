@@ -1,7 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@800&family=Oswald:wght@500;700&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
 :root {
   --text: #e9e1ea;
   --background: #171118;
   --primary-button: #a7a686;
   --secondary-button: #2c202c;
   --accent: #547372;
+
+  --ff-extra-bold: 800;
+
+  --text-2: #010204;
+  --background-2: #f3f5fc;
+  --primary-button-2: #552fa7;
+  --secondary-button-2: #f0dbf5;
+  --accent-2: #912fa7;
+}
+
+h1 {
+  font-family: "Karla", sans-serif;
+  font-weight: var(--ff-extra-bold);
+  font-size: 5rem;
+}
+
+body {
+  background: var(--background);
+  font-family: "Rubik", sans-serif;
+  color: var(--text);
 }
