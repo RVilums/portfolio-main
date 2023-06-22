@@ -23,7 +23,24 @@ h1 {
 }
 
 body {
-  background: var(--background);
   font-family: "Rubik", sans-serif;
-  color: var(--text);
+  position: relative;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &__dark {
+    color: var(--text);
+    background: var(--background);
+  }
+
+  &__light {
+    color: var(--text-2);
+    background: var(--background-2);
+  }
 }

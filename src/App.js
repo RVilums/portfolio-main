@@ -1,11 +1,21 @@
 import "./global.styles.scss";
+import MainWrapper from "./components/layout/main-wrapper";
+import Button from "./components/common/button";
 
 function App() {
   return (
-    <>
-      <h1>WEB DEVELOPER</h1>
-      <p>Here I will create my portfolio website</p>
-    </>
+    <MainWrapper>
+      <header className="header">
+        <nav>
+          <ul>
+            <Button buttonType="btn">Home</Button>
+            <Button buttonType="btn">NAV</Button>
+            <Button buttonType="btn"></Button>
+            <Button buttonType="btn"></Button>
+          </ul>
+        </nav>
+      </header>
+    </MainWrapper>
   );
 }
 
