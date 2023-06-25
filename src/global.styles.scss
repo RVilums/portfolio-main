@@ -2,12 +2,23 @@
 
 :root {
   --text: #e9e1ea;
+  --text-accent: rgb(214, 207, 207);
   --background: #171118;
   --primary-button: #a7a686;
   --secondary-button: #2c202c;
   --accent: #547372;
 
+  --fs-x-small: 1rem;
+  --fs-small: 1.2rem;
+  --fs-default: 1.6rem;
+  --fs-medium: 2.4rem;
+  --fs-big: 3.2rem;
+
   --ff-extra-bold: 800;
+  --ff-bold: 700;
+  --ff-medium: 500;
+  --ff-default: 400;
+  --ff-light: 300;
 
   --text-2: #010204;
   --background-2: #f3f5fc;
@@ -16,31 +27,52 @@
   --accent-2: #912fa7;
 }
 
-h1 {
-  font-family: "Karla", sans-serif;
-  font-weight: var(--ff-extra-bold);
-  font-size: 5rem;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Rubik", sans-serif;
   position: relative;
 }
+h1 {
+  font-family: "Karla", sans-serif;
+  font-weight: var(--ff-extra-bold);
+  font-size: 5rem;
+}
 
-.main {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: var(--ff-bold);
+  font-size: var(--fs-medium);
+}
 
-  &__dark {
-    color: var(--text);
-    background: var(--background);
+h3 {
+  color: var(--text-accent);
+  text-align: justify;
+  position: relative;
+  border-left: 3px solid var(--accent);
+  padding: 1rem;
+  font-size: var(--fs-default);
+
+  &::before {
+    content: "<h3>";
+    position: absolute;
+    left: -1rem;
+    top: 0;
   }
+}
 
-  &__light {
-    color: var(--text-2);
-    background: var(--background-2);
-  }
+a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: var(--fs-default);
 }

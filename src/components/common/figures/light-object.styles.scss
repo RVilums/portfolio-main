@@ -1,0 +1,24 @@
+.sun {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #f9484a;
+  background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
+  position: absolute;
+  top: 20%;
+  box-shadow: 0 0 15rem 3.5rem rgba(252, 180, 63, 0.823);
+  animation: moving 4s infinite;
+  transition: all 0.3s ease-in;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(-1rem);
+  }
+  50% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(-1rem);
+  }
+}
