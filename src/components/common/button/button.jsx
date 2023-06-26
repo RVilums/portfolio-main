@@ -13,7 +13,7 @@ const Button = (props) => {
   }
   if (props.buttonType === "link") {
     buttonComponent = (
-      <a className={props.className} href={props.herf}>
+      <a className={props.className} href={props.href ? props.href : ""}>
         {props.children}
       </a>
     );

@@ -1,21 +1,39 @@
 import "./global.styles.scss";
-import MainWrapper from "./components/layout/main-wrapper";
-import Button from "./components/common/button";
+
+import Root from "./pages/root.page";
+import Home from "./pages/home.page";
+import Wrapper from "./components/layout/wrapper";
+import Container from "./components/layout/container";
 
 function App() {
   return (
-    <MainWrapper>
-      <header className="header">
-        <nav>
-          <ul>
-            <Button buttonType="btn">Home</Button>
-            <Button buttonType="btn">NAV</Button>
-            <Button buttonType="btn"></Button>
-            <Button buttonType="btn"></Button>
-          </ul>
-        </nav>
-      </header>
-    </MainWrapper>
+    <Root>
+      <Home />
+      <Wrapper>
+        <h1>My Expretise</h1>
+        <Container className="container--border">
+          <div className="expertise__heading">
+          <h2>UI/UX Design</h2>
+          {/* Icon Here */}
+          </div>
+          <h3></h3>
+        </Container>
+        <Container className="container--border">
+          <div className="expertise__heading">
+          <h2>Software Development</h2>
+          {/* Icon Here */}
+          </div>
+          <h3></h3>
+        </Container>
+        <Container className="container--border">
+          <div className="expertise__heading">
+          <h2></h2>
+          {/* Icon Here */}
+          </div>
+          <h3></h3>
+        </Container>
+      </Wrapper>
+    </Root>
   );
 }
 

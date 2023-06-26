@@ -1,12 +1,12 @@
-import MainWrapper from "../components/layout/main-wrapper";
+import ThemeWrapper from "../components/layout/theme-wrapper";
 import Navigation from "../components/navigation/navigation.component";
 
 const Root = (props) => {
   return (
-    <MainWrapper>
+    <ThemeWrapper>
       <Navigation />
       {props.children}
-    </MainWrapper>
+    </ThemeWrapper>
   );
 };
 
