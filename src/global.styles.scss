@@ -6,7 +6,7 @@
   --background: #171118;
   --primary-button: #a7a686;
   --secondary-button: #2c202c;
-  --accent: #547372;
+  --accent: #912fa7;
 
   --fs-x-small: 1rem;
   --fs-small: 1.2rem;
@@ -37,11 +37,15 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Rubik", sans-serif;
   position: relative;
+  height: auto;
+  overflow-y: scroll;
+
 }
 h1 {
   font-family: "Karla", sans-serif;
@@ -57,17 +61,18 @@ h2 {
 
 h3 {
   color: var(--text-accent);
-  text-align: justify;
   position: relative;
   border-left: 3px solid var(--accent);
   padding: 1rem;
   font-size: var(--fs-default);
+  font-weight: 400;
 
   &::before {
     content: "<h3>";
     position: absolute;
-    left: -1rem;
-    top: 0;
+    left: -1.4rem;
+    top: -1.8rem;
+    font-size: var(--fs-small);
   }
 }
 
